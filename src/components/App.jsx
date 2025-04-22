@@ -14,7 +14,7 @@ import { Layout } from "../components/Layout/Layout";
 import { RestrictedRoute } from "../components/RestrictedRoute/RestrictedRoute";
 import { PrivateRoute } from "../components/PrivateRoute/PrivateRoute";
 import { Toaster } from "react-hot-toast";
-import { DNA } from "react-loader-spinner";
+import { ClipLoader } from "react-spinners";
 
 function App() {
   const dispatch = useDispatch();
@@ -27,13 +27,11 @@ function App() {
   return isRefreshing ? (
     <div className="app_loader">
       <b>Refreshing user...</b>
-      <DNA
-        visible={true}
-        height="80"
-        width="80"
-        ariaLabel="dna-loading"
-        wrapperStyle={{}}
-        wrapperClass="dna-wrapper"
+      <ClipLoader
+        color="#36d7b7"
+        loading={true}
+        size={80}
+        aria-label="loading-spinner"
       />
     </div>
   ) : (

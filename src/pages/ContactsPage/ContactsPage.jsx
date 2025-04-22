@@ -6,7 +6,7 @@ import ContactList from "../../components/ContactList/ContactList";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/contacts/operations";
 import s from "./ContactsPage.module.css";
-import { DNA } from "react-loader-spinner";
+import { ClipLoader } from "react-spinners";
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
@@ -23,13 +23,11 @@ const ContactsPage = () => {
       <SearchBox />
       {loading && (
         <div className={s.contacts_loader}>
-          <DNA
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="dna-loading"
-            wrapperStyle={{}}
-            wrapperClass="dna-wrapper"
+          <ClipLoader
+            color="#36d7b7"
+            loading={true}
+            size={80}
+            aria-label="loading-spinner"
           />
         </div>
       )}
