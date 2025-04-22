@@ -1,0 +1,19 @@
+.contacts_page {
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.contacts_loader {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 20px;
+  color: whitesmoke;
+  font-size: 48px;
+  font-weight: 700;
+}

@@ -1,0 +1,32 @@
+.usermenu {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.usermenu_btn {
+  padding: 6px;
+  /* border: 1px solid grey; */
+  border-radius: 8px;
+  /* background-color: rgba(255, 0, 0, 0.879); */
+  background-color: wheat;
+  color: black;
+  width: 120px;
+  align-self: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.usermenu_btn:hover {
+  background-color: rgba(255, 0, 0, 0.879);
+  color: wheat;
+  cursor: pointer;
+}
+
+.username {
+  color: wheat;
+}
